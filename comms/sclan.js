@@ -20,7 +20,7 @@ module.exports = {
                     .addField(`**Example usage #4: **`, `\`\`\`${SETTINGS.prefix}${SETTINGS.searchClanTag} '8mm'\`\`\``, false)
                     .setColor("#ff0300")
                     .setThumbnail("https://i.imgur.com/fqymYyZ.png");
-                wrongSyntaxEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio');
+                wrongSyntaxEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net');
                 wrongSyntaxEmbed.setTimestamp();
                 wrongSyntaxEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
                 message.channel.send(wrongSyntaxEmbed)
@@ -86,9 +86,9 @@ module.exports = {
                             .setTitle(`Ooops! Database error :( `)
                             .setDescription(`**There was an issue with the database connection please check the console!**`)
                             .setColor("#ff0300")
-                            .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                            .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                             .setThumbnail("https://i.imgur.com/fqymYyZ.png");
-                            dbConnectionEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                            dbConnectionEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                             dbConnectionEmbed.setTimestamp();
                             dbConnectionEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
                         message.channel.send(dbConnectionEmbed)
@@ -112,7 +112,7 @@ module.exports = {
                                     .addField(`**Example usage #4: **`, `\`\`\`${SETTINGS.prefix}${SETTINGS.searchClanTag} '8mm'\`\`\``, false)
                                     .setColor("#f82d2a")
                                     .setThumbnail('https://i.imgur.com/fqymYyZ.png')
-                                    .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio');
+                                    .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net');
                                     searchEmbed.setTimestamp();
                                     searchEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
                                     message.channel.send(searchEmbed)
@@ -125,7 +125,7 @@ module.exports = {
                                 .setDescription(`Command usage: \`${SETTINGS.prefix}${SETTINGS.searchClanTag} "<CLAN-TAG>" <TOP-10-5-3>\``)
                                 .setColor("#f82d2a")
                                 .setThumbnail(topURL)
-                                .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio');
+                                .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net');
                         for (let i = 0; i<limit; i++){
                             searchEmbed.addField(`${emoji[i]} ** ${result[i]["Name"]} - K/D: [${result[i]["K/D"]}%] ** (TK: ${result[i]["TeamKills"] || "0"}) `, `\`\`\`KILL: ${result[i]["Kills"]} - WOUND: ${result[i]["Wounds"]} - DEATH: ${result[i]["Deaths"]} - Revive: ${result[i]["Revives"]}\`\`\``,false);
                         }

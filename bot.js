@@ -40,7 +40,7 @@ client.once('ready', async () => {
 // starting the engine :)
 client.on("ready", () => {
     console.log(`${client.user.username} ready!`);
-    client.user.setActivity(`${SETTINGS.prefix}help`, { type: "LISTENING" });
+    //client.user.setActivity(`${SETTINGS.prefix}help`, { type: "LISTENING" });
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
@@ -68,9 +68,9 @@ client.on("message", async (message) => {
             .setTitle(`Ooops! Wrong Channel`)
             .setDescription(`**You can only use commands at <#${SETTINGS.statChannel}>.**`)
             .setColor("#ff0300")
-            .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+            .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
             .setThumbnail("https://i.imgur.com/fqymYyZ.png");
-        wrongChannelEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+        wrongChannelEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
         wrongChannelEmbed.setTimestamp();
         wrongChannelEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
         message.channel.send(wrongChannelEmbed)
@@ -96,9 +96,9 @@ client.on("message", async (message) => {
                 .setTitle(`Ooops! You are too fast!`)
                 .setDescription(`**Usage of this command is protected with a cooldown.**`)
                 .setColor("#ff0300")
-                .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                 .setThumbnail("https://i.imgur.com/fqymYyZ.png");
-            wrongSyntaxEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+            wrongSyntaxEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
             wrongSyntaxEmbed.addField(`Try after`,`\`${timeLeft.toFixed(1)}second(s)\``);
             wrongSyntaxEmbed.setTimestamp();
             wrongSyntaxEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);

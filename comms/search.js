@@ -24,9 +24,9 @@ module.exports = {
                     .setTitle(`Ooops! Wrong Syntax`)
                     .setDescription(`**Usage of the command: \`${SETTINGS.prefix}${SETTINGS.searchTag} <Your_Steam64ID>\`.**`)
                     .setColor("#ff0300")
-                    .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                    .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                     .setThumbnail("https://i.imgur.com/fqymYyZ.png");
-                wrongSyntaxEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                wrongSyntaxEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                 wrongSyntaxEmbed.addField(`Example`,`\`${SETTINGS.prefix}${SETTINGS.searchTag} 76561198255784011\``);
                 wrongSyntaxEmbed.setTimestamp();
                 wrongSyntaxEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
@@ -67,9 +67,9 @@ module.exports = {
                             .setTitle(`Ooops! Database error :( `)
                             .setDescription(`**There was an issue with the database connection please check the console!**`)
                             .setColor("#ff0300")
-                            .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                            .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                             .setThumbnail("https://i.imgur.com/fqymYyZ.png");
-                            dbConnectionEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                            dbConnectionEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                             dbConnectionEmbed.setTimestamp();
                             dbConnectionEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
                         message.channel.send(dbConnectionEmbed)
@@ -86,9 +86,9 @@ module.exports = {
                             .setTitle(`User not found!`)
                             .setDescription(`This player didn't joined our server (yet).`)
                             .setColor("#ff0300")
-                            .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                            .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                             .setThumbnail("https://i.imgur.com/vFNvpHr.png");
-                        searchEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio')
+                        searchEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net')
                         searchEmbed.setTimestamp();
                         searchEmbed.setFooter(SETTINGS.author, SETTINGS.footerImg);
                         return message.channel.send(searchEmbed)
@@ -110,7 +110,7 @@ module.exports = {
                                 .setDescription(`Command usage: \`${SETTINGS.prefix}${SETTINGS.searchTag} <SteamID64>\``)
                                 .setColor("#f82d2a")
                                 .setThumbnail(summary["avatar"]["large"])
-                                .setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio');
+                                .setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net');
 
 
                             searchEmbed.addField(
@@ -248,7 +248,7 @@ module.exports = {
                                                 serverEmbed.setThumbnail(layerImgURL);
                                             }
                                         }
-                                        serverEmbed.setAuthor('SquadStatJS by LeventHAN x 11TStudio', 'https://avatars2.githubusercontent.com/u/25463237?s=400&u=eccc0ee1cd33352f75338889e791a04d1909bcce&v=4', 'https://github.com/11TStudio');
+                                        serverEmbed.setAuthor('SquadStatJS', 'https://cdn.discordapp.com/emojis/821891199165005865.png?v=1', 'https://www.clanaod.net');
 
                                         serverEmbed.addFields(
                                             { name: `:file_cabinet: **Server** & Ping **(~${state["ping"]})**`, value: `**${state["name"]}**` },
