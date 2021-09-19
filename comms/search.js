@@ -99,6 +99,7 @@ module.exports = {
 
                     } else {
                         // Steam users country code.
+                        console.log(result);
                         steam.getUserSummary(a).then(summary => {
                             let countryFlag = ":pirate_flag: ";
                             if (summary["countryCode"] !== 'undefined' && summary["countryCode"]) {
